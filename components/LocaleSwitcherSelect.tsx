@@ -10,7 +10,7 @@ import { usePathname, useRouter } from '@/i18n/routing';
 
 import { useTransition } from 'react';
 
-type Props = {
+interface LocaleSwitcherSelectProps {
     defaultValue: string;
     label: string;
     children: React.ReactNode;
@@ -20,7 +20,7 @@ export default function LocaleSwitcherSelect({
     children,
     defaultValue,
     label
-}: Props) {
+}: LocaleSwitcherSelectProps) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();
