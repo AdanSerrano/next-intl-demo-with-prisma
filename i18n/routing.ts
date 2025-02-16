@@ -4,7 +4,7 @@ import { defineRouting } from 'next-intl/routing';
 export const routing = defineRouting({
     locales: ['es', 'en', 'de', 'ru'],
     defaultLocale: 'es',
-    localePrefix: 'always'
+    localePrefix: 'never' // but you can use 'never' and 'always' for show or not locale prefix
 });
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =
