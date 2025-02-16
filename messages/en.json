@@ -1,0 +1,12 @@
+{
+  "LocaleLayout": {
+    "title": "next-intl example"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home"
+  }
+}
